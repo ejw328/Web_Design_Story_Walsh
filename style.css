@@ -70,7 +70,7 @@ main * {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6vh;
+  padding-top: 0vh;
   padding-bottom: 2vh;
   text-align: center;
 }
@@ -81,6 +81,7 @@ main * {
   font-style: italic;
   font-size: clamp(16px, 5vw, 30px);
   line-height: 1.1;
+  margin-top: 1.5rem;
 }
 
 .title-display {
@@ -100,10 +101,20 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
+  font-size: 18px;
 }
 
 img {
   margin: 0 auto;
+}
+
+.vine_frame {
+  width: 100vw;
+  max-width: 100vw;
+  padding-top: 1vh;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: -14vw;
 }
 
 .mask {
@@ -114,28 +125,30 @@ img {
   width: 350px;
 }
 
-.dialogue-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
-}
+  .dialogue-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(12px, 6vw, 120px);
+    flex-wrap: nowrap;
+  } 
 
-.dialogue-text {
-  flex: 1 1 280px;
-  min-width: 280px;
-}
+  .dialogue-text {
+    flex: 1 1 auto;
+    max-width: 700px;
+    min-width: 0;
+  }
 
-.dialogue-text p {
-  max-width: none;
-  margin: 0 0 1.5em 0;
-}
+  .dialogue-text p {
+    max-width: none;
+    margin: 0 0 1.5em 0;
+  }
 
-.jester-left,
-.jester-right {
-  width: 250px;
-  flex-shrink: 0;
-}
+  .jester-left,
+  .jester-right {
+    width: clamp(50px, 18vw, 250px);
+    flex-shrink: 1;
+  }
 
 .jester-left:hover,
 .jester-right:hover {
@@ -151,7 +164,96 @@ img {
   width: 250px;
 }
 
+.napkin {
+  width: 200px;
+  animation: cough 0.3s ease-in-out infinite;
+}
+
+@keyframes cough {
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.bottle {
+  width: 300px;
+  padding-bottom: 2rem;
+}
+
+.crest-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(12px, 6vw, 120px);
+  flex-wrap: nowrap;
+}
+
+.crest-text {
+  max-width: 700px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.crest-text p {
+  max-width: none;
+  margin: 0 0 1.5em 0;
+}
+
+.crest-left,
+.crest-right {
+  width: clamp(50px, 18vw, 200px);
+  flex-shrink: 1;
+}
+
+.hallway {
+  width: 300px;
+  padding-bottom: 2rem;
+}
+
+.torch {
+  float: right;
+  width: 130px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+.has-float {
+  overflow: ;
+}
+
+.skulls {
+  width: 250px;
+  padding-bottom: 2rem;
+}
+
+.chain {
+  float: right;
+  width: 250px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* Footer links to classmates' sites */
+.site-links {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.site-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.site-links a {
+  color: #E7DAC3;
+  text-decoration: underline;
+}
+
+.site-links a:hover {
+  color: #ffffff;
+}
 
 
-
-
+/* All images are generated from ChatGPT. The original story is from: https://www.gutenberg.org/cache/epub/1063/pg1063-images.html*/ 
