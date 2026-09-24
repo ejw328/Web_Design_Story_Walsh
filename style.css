@@ -111,7 +111,7 @@ img {
 .vine_frame {
   width: 100vw;
   max-width: 100vw;
-  padding-top: 1vh;
+  margin-top: -60px;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   margin-bottom: -14vw;
@@ -231,29 +231,38 @@ img {
   margin: 0 0 1rem 1.5rem;
 }
 
+.bricks {
+  width: 220px;
+  padding-bottom: 2rem;
+}
+
 /* Footer links to classmates' sites */
+
 .site-links {
   text-align: center;
   padding: 40px 0;
-  font-size: 14px;
 }
 
-.site-links ul {
-  list-style: none;
+.tale-links {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
-.site-links a {
+.tale-link {
+  padding: 20px;
+  min-width: 130px;
+  border: 1px solid #E7DAC3;
   color: #E7DAC3;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-.site-links a:hover {
-  color: #ffffff;
+.tale-link:hover {
+  background: #E7DAC3;
+  color: #14100D;
 }
-
 
 /* All images are generated from ChatGPT. The original story is from: https://www.gutenberg.org/cache/epub/1063/pg1063-images.html*/ 
+
