@@ -111,10 +111,10 @@ img {
 .vine_frame {
   width: 100vw;
   max-width: 100vw;
-  margin-top: -60px;
+  margin-top: 10px;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-bottom: -14vw;
+  margin-bottom: 10vw;
 }
 
 .mask {
